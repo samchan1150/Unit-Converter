@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <div class="converter">
+        <!-- Unit Type Selection -->
+        <label for="unitType">Select Unit Type:</label>
+        <select id="unitType">
+            <option value="mass">Mass</option>
+            <option value="volume">Volume</option>
+            <option value="distance">Distance</option>
+            <option value="memory">Memory</option>
+            <option value="area">Area</option>
+            <option value="time">Time</option>
+        </select>
+
+        <!-- Unit Selection -->
+        <div class="unit-selection">
+            <div class="unit-group">
+                <label for="fromUnit">From:</label>
+                <select id="fromUnit">
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <input type="number" id="fromValue" placeholder="Enter value" />
+            </div>
+
+            <div class="unit-group">
+                <label for="toUnit">To:</label>
+                <select id="toUnit">
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <input type="text" id="toValue" placeholder="Result" readonly />
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
